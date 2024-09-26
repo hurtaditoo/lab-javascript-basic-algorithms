@@ -64,3 +64,22 @@ if (!isFound) {
 
 let number = hacker1.localeCompare(hacker2);
 console.log(number);
+
+// Bonus 1
+const longText = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut sapien vitae est interdum ornare vel eget nisl. Quisque at maximus justo, eget tincidunt turpis. Cras a dolor dapibus, tincidunt lectus nec, gravida lorem. Vivamus imperdiet elementum odio, in lacinia elit accumsan eu. Ut ultrices, nisi eu egestas mattis, tellus ante ornare orci, ut blandit lectus nulla non tellus. Nam efficitur venenatis erat id volutpat. Donec sollicitudin convallis ante, vitae condimentum mi tristique sagittis. Maecenas suscipit, elit ac gravida finibus, tellus nisi accumsan odio, sit amet pulvinar enim velit et risus. Phasellus eu justo ut diam tempus interdum.
+
+Donec facilisis ipsum lacus, at venenatis tellus pretium quis. Sed ac consectetur arcu. Proin eu euismod tortor. Fusce vehicula sapien ac nibh maximus ullamcorper. Sed quis dignissim dolor, nec maximus magna. Donec condimentum ex at varius posuere. Curabitur tincidunt arcu mauris, in pharetra nisl ultricies non. Curabitur accumsan dolor non lectus pulvinar auctor. Quisque vitae metus sit amet dui molestie commodo. Aenean at malesuada diam.
+
+Morbi viverra venenatis leo, non aliquet risus molestie eu. Suspendisse eu massa pharetra magna venenatis pharetra a quis enim. Integer ut libero enim. Etiam pretium lorem nunc, sed bibendum mi fringilla sed. Phasellus ac felis laoreet, tincidunt diam vitae, scelerisque tortor. Pellentesque facilisis quis sem eget elementum. Donec id dui sapien. Vivamus rhoncus magna eu diam posuere, quis finibus ipsum tempus. Phasellus placerat lectus sed finibus vehicula. Proin tempus arcu a orci faucibus venenatis et sed libero. Suspendisse ornare, nisi sed tincidunt ullamcorper, metus dolor dictum urna, vitae venenatis magna lorem ac nibh. Nam dapibus, tellus vitae ornare dictum, augue libero dictum justo, ac vestibulum orci est sed elit. Duis lacinia, risus vel consectetur accumsan, libero neque viverra leo, sit amet rutrum massa orci a augue. Integer ornare, nisi porttitor pellentesque ullamcorper, erat sem volutpat mauris, ac blandit arcu urna varius nisl. Aliquam nec eros non tellus varius rutrum. Donec aliquet maximus sapien, quis sagittis dolor pellentesque ac.`
+
+function counterOfWords(text) {
+    return text.split(' ').length;
+}
+
+console.log(counterOfWords(longText));
+
+function etCounter(text) {
+    return text.split("et").length;
+}
+
+console.log(etCounter(longText));
