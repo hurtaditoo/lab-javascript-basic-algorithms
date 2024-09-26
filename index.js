@@ -15,3 +15,11 @@ if (hacker1.length > hacker2.length) {
 }
 
 // Iteration 3: Loops
+let nameInCapitalLetters = '';
+for (let i = 0; i < hacker1.length; i++) {
+    const char = hacker1[i];
+    nameInCapitalLetters += `${char} `;
+}
+
+console.log(nameInCapitalLetters.trim());
+
