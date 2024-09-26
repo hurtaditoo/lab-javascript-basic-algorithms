@@ -23,3 +23,10 @@ for (let i = 0; i < hacker1.length; i++) {
 
 console.log(nameInCapitalLetters.trim());
 
+let reverseName = '';
+for (let i = hacker2.length - 1; i >= 0; i--) {
+    const char = hacker2[i];
+    reverseName += `${char}`;
+}
+
+console.log(reverseName)
