@@ -83,3 +83,20 @@ function etCounter(text) {
 }
 
 console.log(etCounter(longText));
+
+// Bonus 2
+let phraseToCheck = `Distopía ficticia?`;
+phraseToCheck = phraseToCheck.toLowerCase().replace(/[^a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s]/gi, '');
+
+let palindromeToCheck = ``;
+for (let i = phraseToCheck.length - 1; i >= 0; i--) {
+    palindromeToCheck += phraseToCheck[i];
+}
+
+console.log(palindromeToCheck);
+
+if (phraseToCheck === palindromeToCheck) {
+    console.log(`You find a palindrome phrase!`)
+} else {
+    console.log(`Nice try, but you should continue trying!`)
+}
